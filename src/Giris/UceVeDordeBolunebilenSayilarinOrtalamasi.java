@@ -2,7 +2,7 @@ package Giris;
 
 import java.util.Scanner;
 
-public class calismadosyasi {
+public class UceVeDordeBolunebilenSayilarinOrtalamasi {
     public static void main(String[] args) {
         int k,count=0, n, total, average;
 
