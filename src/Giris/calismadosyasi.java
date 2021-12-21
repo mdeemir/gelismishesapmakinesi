@@ -1,28 +1,41 @@
 package Giris;
 
-import java.util.Scanner;
+
 
 public class calismadosyasi {
     public static void main(String[] args) {
-       int total=1, k=1;
-       int n;
+
+       int basdeg, baspow=1;
+
+       int result=0;
 
 
-       Scanner input = new Scanner(System.in);
 
-        System.out.print("Faktöriyel Sayısını giriniz: ");
-        n= input.nextInt();
+       for (int number=100;number<1000;number++){
 
-        while (k<=n) {
-            total=total*k;
-            k++;
+            while (number!=0){
 
+                basdeg=number%10;
+
+                baspow=basdeg*basdeg*basdeg;
+
+                result+=baspow;
+
+                number=number%10;
+
+                if (result==number){
+                    System.out.println(number);
+
+                }
+                }
 
 
         }
 
+}
 
-        System.out.println(n + " sayısının faktöriyeli: " + total);
 
-    }
+
+
+
 }
