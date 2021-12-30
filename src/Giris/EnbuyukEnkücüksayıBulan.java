@@ -17,7 +17,6 @@ public class EnbuyukEnkücüksayıBulan {
             System.out.print(i+ ". Sayıyı giriniz: " );
             number= input.nextInt();
             i++;
-
             if (i==1){
                 max=number;
                 min=number;
